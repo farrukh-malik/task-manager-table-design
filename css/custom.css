@@ -1,0 +1,126 @@
+.logoTxt {
+	font-size: 24px;
+	color: #000;
+	font-weight: 700;
+	margin-left: 10px !important;
+}
+.bg-blue {
+	background-color: #9fc8ff !important;
+}
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+.table-bordered td,
+.table-bordered th {
+	border: 0px solid transparent !important;
+	border-top: 1px solid #e3e6f0 !important;
+}
+.dropdown.statusDropdown .dropdown-toggle::after {
+	display: none;
+}
+.dropdown.statusDropdown a#dropdownMenuLink {
+	padding: 4px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.dropdown.statusDropdown a#dropdownMenuLink.done {
+	color: #90cb8d;
+	background: #e3f0e2;
+	border: 2px solid #c3dcc2;
+}
+.dropdown.statusDropdown a#dropdownMenuLink.todo {
+	color: #979fdd;
+	background: #979fdd54;
+	border: 2px solid #979fdd;
+}
+.dropdown.statusDropdown a#dropdownMenuLink.wip {
+	color: #a68b40;
+	background: #f5da91;
+	border: 2px solid #e4c36a;
+}
+.dropdown.statusDropdown .dropdown-menu label.dropdown-item.done span {
+	color: #90cb8d;
+	background: #e3f0e2;
+	border: 2px solid #c3dcc2;
+	padding: 4px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 6px;
+	margin: 0 0 0 10px;
+}
+.dropdown.statusDropdown .dropdown-menu label.dropdown-item.todo span {
+	color: #979fdd;
+	background: #979fdd54;
+	border: 2px solid #979fdd;
+	padding: 4px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 6px;
+	margin: 0 0 0 10px;
+}
+.dropdown.statusDropdown .dropdown-menu label.dropdown-item.wip span {
+	color: #a68b40;
+	background: #f5da91;
+	border: 2px solid #e4c36a;
+	padding: 4px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 6px;
+	margin: 0 0 0 10px;
+}
+.dropdown.statusDropdown .dropdown-menu {
+	min-width: 120px !important;
+	padding: 10px 0px !important;
+}
+.dropdown.statusDropdown .dropdown-item {
+	padding: 5px 10px !important;
+}
+tr.view {
+	cursor: pointer;
+	position: relative;
+	background: #fcfcfc;
+}
+tr.view:hover {
+	cursor: pointer;
+	position: relative;
+	background: #f7f7f7;
+}
+tr.fold {
+	display: none;
+  }
+tr.fold.open {
+	display:table-row;
+}
+table.fold-table > tbody > tr.view > td:first-child:before{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 22px;
+    height: 22px;
+    margin-top: -15px;
+    font-size: 16px;
+    color: #1265ce;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	transition: all 0.3s ease;
+}
+table.fold-table > tbody > tr.view.open td:first-child:before{
+	transform: rotate(90deg);
+    color: #1265ce;
+}
+table.fold-table tr td:first-child {
+    padding-left: 30px;
+}
+table.fold-table tr.fold td:first-child {
+    padding-left: 50px;
+}
